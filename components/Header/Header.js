@@ -1,6 +1,6 @@
-import Link from "next/link";
-import { HeaderWrapper } from "./Style";
-import Image from "next/image";
+import Link from 'next/link'
+import { HeaderWrapper } from './Style'
+import Image from 'next/image'
 
 function Header() {
   return (
@@ -15,7 +15,7 @@ function Header() {
         </Link>
       </div>
     </HeaderWrapper>
-  );
+  )
 }
 
-export default Header;
+export default Header

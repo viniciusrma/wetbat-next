@@ -1,56 +1,14 @@
-import { useState } from "react";
-import { QuoteFormWrapper } from "./Style";
+import { useState } from 'react'
+import { QuoteFormWrapper } from './Style'
 
 function QuoteForm() {
-  const [from, setFrom] = useState("");
-  const [departureDate, setDepartureDate] = useState("");
-  const [destination, setDestination] = useState("");
-  const [returnDate, setReturnDate] = useState("");
-  const [people, setPeople] = useState(1);
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-
-  const handleFromChange = (e) => {
-    const { value } = e.target;
-    setFrom(value);
-    props.onFromChange(value);
-  };
-
-  const handleDepartureDateChange = (e) => {
-    const { value } = e.target;
-    setDepartureDate(value);
-    props.onDepartureDateChange(value);
-  };
-
-  const handleDestinationChange = (e) => {
-    const { value } = e.target;
-    setDestination(value);
-    props.onDestinationChange(value);
-  };
-
-  const handleReturnDateChange = (e) => {
-    const { value } = e.target;
-    setReturnDate(value);
-    props.onReturnDateChange(value);
-  };
-
-  const handlePeopleChange = (e) => {
-    const { value } = e.target;
-    setPeople(value);
-    props.onPeopleChange(value);
-  };
-
-  const handleNameChange = (e) => {
-    const { value } = e.target;
-    setName(value);
-    props.onNameChange(value);
-  };
-
-  const handleEmailChange = (e) => {
-    const { value } = e.target;
-    setEmail(value);
-    props.onEmailChange(value);
-  };
+  const [from, setFrom] = useState('')
+  const [departureDate, setDepartureDate] = useState('')
+  const [destination, setDestination] = useState('')
+  const [returnDate, setReturnDate] = useState('')
+  const [people, setPeople] = useState(1)
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
 
   return (
     <QuoteFormWrapper>
@@ -103,7 +61,7 @@ function QuoteForm() {
         </button>
       </form>
     </QuoteFormWrapper>
-  );
+  )
 }
 
-export default QuoteForm;
+export default QuoteForm
