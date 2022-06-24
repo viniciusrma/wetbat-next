@@ -4,7 +4,6 @@ import QuoteForm from '../components/QuoteForm/QuoteForm'
 export default function Home() {
   return (
     <div>
-      <Header />
       <QuoteForm />
     </div>
   )

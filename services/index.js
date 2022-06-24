@@ -13,6 +13,7 @@ export const getQuotes = async () => {
             destination
             returnDate
             people
+            transport
             name
             email
             id
