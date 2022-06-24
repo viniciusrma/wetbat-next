@@ -2,11 +2,7 @@ import { getQuotes } from '../services'
 import QuotesTable from '../components/QuotesTable/QuotesTable'
 
 export default function QuotesList({ quotes }) {
-  return (
-    <div>
-      <QuotesTable quotes={quotes} />
-    </div>
-  )
+  return <QuotesTable quotes={quotes} />
 }
 
 export async function getStaticProps() {
