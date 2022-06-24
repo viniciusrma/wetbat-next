@@ -1,7 +1,6 @@
-import { getQuotes } from '../../services'
 import { QuotesTableWrapper } from './Style'
 
-export default function QuotesList({ quotes }) {
+export default function QuotesTable({ quotes }) {
   return (
     <QuotesTableWrapper>
       <thead>
@@ -35,13 +34,4 @@ export default function QuotesList({ quotes }) {
       </tbody>
     </QuotesTableWrapper>
   )
-}
-
-export async function getStaticProps() {
-  const quotes = (await getQuotes()) || []
-
-  console.log(quotes[0].node.transport)
-  return {
-    props: { quotes }
-  }
 }
