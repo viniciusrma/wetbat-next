@@ -1,5 +1,5 @@
 import { getQuotes } from '../../services'
-import {QuotesTableWrapper} from './Style'
+import { QuotesTableWrapper } from './Style'
 
 export default function QuotesList({ quotes }) {
   return (
@@ -14,6 +14,7 @@ export default function QuotesList({ quotes }) {
           <th>Transport</th>
           <th>Name</th>
           <th>E-mail</th>
+          <th>Actions</th>
         </tr>
       </thead>
 
@@ -28,6 +29,7 @@ export default function QuotesList({ quotes }) {
             <td>{quote.node.transport}</td>
             <td>{quote.node.name}</td>
             <td>{quote.node.email}</td>
+            <td>Actions</td>
           </tr>
         ))}
       </tbody>
