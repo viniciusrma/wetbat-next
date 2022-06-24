@@ -26,7 +26,7 @@ export default function QuotesList({ quotes }) {
             <td>{quote.node.destination}</td>
             <td>{quote.node.returnDate}</td>
             <td>{quote.node.people}</td>
-            <td>{quote.node.transport}</td>
+            <td>{quote.node.transport.toString()}</td>
             <td>{quote.node.name}</td>
             <td>{quote.node.email}</td>
             <td>Actions</td>
@@ -40,6 +40,7 @@ export default function QuotesList({ quotes }) {
 export async function getStaticProps() {
   const quotes = (await getQuotes()) || []
 
+  console.log(quotes[0].node.transport)
   return {
     props: { quotes }
   }

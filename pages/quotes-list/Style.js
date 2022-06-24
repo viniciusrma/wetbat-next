@@ -7,7 +7,7 @@ export const QuotesTableWrapper = styled.table`
   overflow-wrap: break-word;
 
   thead tr {
-    background-color: #009879;
+    background-color: #237e7a;
     color: #ffffff;
     text-align: left;
   }
