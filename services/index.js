@@ -27,3 +27,17 @@ export const getQuotes = async () => {
 
   return result.quotesConnection.edges
 }
+
+export const submitQuote = async (obj) => {
+  try {
+    const result = await fetch('/api/add-quote', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(obj)
+    })
+
+    return result.json()
+  } catch (error) {
+    console.log(error, 'Oops, something went wrong')
+  }
+}

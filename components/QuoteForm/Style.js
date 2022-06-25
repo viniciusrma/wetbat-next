@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const QuoteFormWrapper = styled.div`
   align-items: center;
@@ -49,4 +49,25 @@ export const QuoteFormWrapper = styled.div`
     background: #3d4d9f;
     cursor: pointer;
   }
-`;
+
+  #transport-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  #transport-checkbox input {
+    margin: 0;
+    padding: 0;
+    transform: scale(2);
+    padding: 10px;
+    -ms-transform: scale(2);
+    -moz-transform: scale(2);
+    -webkit-transform: scale(2);
+    -o-transform: scale(2);
+  }
+
+  #transport-checkbox label {
+    margin-right: 2rem;
+  }
+`

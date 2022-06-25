@@ -14,8 +14,6 @@ export default function QuotesList({ quotes }) {
 export async function getStaticProps() {
   const quotes = (await getQuotes()) || []
 
-  console.table(quotes[0].node)
-
   return {
     props: { quotes }
   }
