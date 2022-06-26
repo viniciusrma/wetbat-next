@@ -15,6 +15,8 @@ function QuoteForm() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
 
+  const toggleChecked = () => setTransport(value => !value);
+
   const handleQuoteSubmission = () => {
     setError(false)
     if (
@@ -113,8 +115,8 @@ function QuoteForm() {
         <div id="transport-checkbox">
           <label htmlFor="transport">Transport</label>
           <input
-            value={transport}
-            onChange={(e) => setTransport(e.target.value)}
+            onChange={toggleChecked}
+            checked={transport}
             type="checkbox"
             name="transport"
             id="transport"
