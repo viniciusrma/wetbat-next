@@ -6,34 +6,23 @@ import { submitQuote } from '../../services'
 function QuoteForm() {
   const [error, setError] = useState(false)
   const [showSuccessMessage, setShowSuccessMessage] = useState(false)
-  const fromElement = useRef()
-  const departureDateElement = useRef()
-  const destinationElement = useRef()
-  const returnDateElement = useRef()
-  const peopleElement = useRef()
-  const transportElement = useRef()
-  const nameElement = useRef()
-  const emailElement = useRef()
-
-  const { value: from } = fromElement.current || ''
-  const { value: departureDate } = departureDateElement.current || ''
-  const { value: destination } = destinationElement.current || ''
-  const { value: returnDate } = returnDateElement.current || ''
-  const { value: people } = peopleElement.current || ''
-  const { value: transport } = transportElement.current || ''
-  const { value: name } = nameElement.current || ''
-  const { value: email } = emailElement.current || ''
+  const [from, setFrom] = useState('')
+  const [departureDate, setDepartureDate] = useState('')
+  const [destination, setDestination] = useState('')
+  const [returnDate, setReturnDate] = useState('')
+  const [people, setPeople] = useState('')
+  const [transport, setTransport] = useState(false)
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
 
   const handleQuoteSubmission = () => {
     setError(false)
-
     if (
       !from ||
       !departureDate ||
       !destination ||
       !returnDate ||
       !people ||
-      !transport ||
       !name ||
       !email
     ) {
@@ -42,17 +31,18 @@ function QuoteForm() {
     }
 
     const quoteObject = {
-      fromElement,
-      departureDateElement,
-      destinationElement,
-      returnDateElement,
-      peopleElement,
-      transportElement,
-      nameElement,
-      emailElement
+      from,
+      departureDate,
+      destination,
+      returnDate,
+      people,
+      transport,
+      name,
+      email
     }
 
     submitQuote(quoteObject).then((res) => {
+      console.log(quoteObject)
       setShowSuccessMessage(true)
       setTimeout(() => {
         setShowSuccessMessage(false)
@@ -66,7 +56,8 @@ function QuoteForm() {
       <form action="submit">
         <label htmlFor="from">Departure place</label>
         <input
-          ref={fromElement}
+          value={from}
+          onChange={(e) => setFrom(e.target.value)}
           type="text"
           name="from"
           id="from"
@@ -76,8 +67,9 @@ function QuoteForm() {
 
         <label htmlFor="departure-date">Departure date</label>
         <input
-          ref={departureDateElement}
-          type="text"
+          value={departureDate}
+          onChange={(e) => setDepartureDate(e.target.value)}
+          type="date"
           name="departure-date"
           id="departure-date"
           placeholder="Departure Date"
@@ -86,7 +78,8 @@ function QuoteForm() {
 
         <label htmlFor="destination">Destination</label>
         <input
-          ref={destinationElement}
+          value={destination}
+          onChange={(e) => setDestination(e.target.value)}
           type="text"
           name="destination"
           id="destination"
@@ -96,8 +89,9 @@ function QuoteForm() {
 
         <label htmlFor="return-date">Return date</label>
         <input
-          ref={returnDateElement}
-          type="text"
+          value={returnDate}
+          onChange={(e) => setReturnDate(e.target.value)}
+          type="date"
           name="return-date"
           id="return-date"
           placeholder="Return Date"
@@ -106,8 +100,10 @@ function QuoteForm() {
 
         <label htmlFor="people">Nº of travellers</label>
         <input
-          ref={peopleElement}
+          value={people}
+          onChange={(e) => setPeople(e.target.value)}
           type="number"
+          min={1}
           name="people"
           id="people"
           placeholder="Tripulation"
@@ -117,18 +113,19 @@ function QuoteForm() {
         <div id="transport-checkbox">
           <label htmlFor="transport">Transport</label>
           <input
-            ref={transportElement}
+            value={transport}
+            onChange={(e) => setTransport(e.target.value)}
             type="checkbox"
             name="transport"
             id="transport"
-            required
           />
         </div>
 
         {/* contact information */}
         <label htmlFor="name">Name</label>
         <input
-          ref={nameElement}
+          value={name}
+          onChange={(e) => setName(e.target.value)}
           type="text"
           name="name"
           id="name"
@@ -138,7 +135,8 @@ function QuoteForm() {
 
         <label htmlFor="email">Email</label>
         <input
-          ref={emailElement}
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           type="email"
           name="email"
           id="email"

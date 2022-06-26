@@ -12,25 +12,25 @@ export default async function quotes(req, res) {
 
   const query = gql`
     mutation AddQuote(
-      $from: String!
-      $departureDate: Date!
-      $destination: String!
-      $returnDate: Date!
-      $people: Number!
-      $transport: Boolean!
-      $name: String!
-      $email: String!
+      $from: String!,
+      $departureDate: Date!,
+      $destination: String!,
+      $returnDate: Date!,
+      $people: Number!,
+      $transport: Boolean!,
+      $name: String!,
+      $email: String!,
     ) {
       addQuote(
         data: {
-          from: $from
-          departureDate: $departureDate
-          destination: $destination
-          returnDate: $returnDate
-          people: $people
-          transport: $transport
-          name: $name
-          email: $email
+          from: $from,
+          departureDate: $departureDate,
+          destination: $destination,
+          returnDate: $returnDate,
+          people: $people,
+          transport: $transport,
+          name: $name,
+          email: $email,
         }
       )
     }
