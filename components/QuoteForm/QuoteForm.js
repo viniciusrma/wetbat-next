@@ -10,12 +10,12 @@ function QuoteForm() {
   const [departureDate, setDepartureDate] = useState('')
   const [destination, setDestination] = useState('')
   const [returnDate, setReturnDate] = useState('')
-  const [people, setPeople] = useState('')
+  const [people, setPeople] = useState(1)
   const [transport, setTransport] = useState(false)
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
 
-  const toggleChecked = () => setTransport(value => !value);
+  const toggleChecked = () => setTransport((value) => !value)
 
   const handleQuoteSubmission = () => {
     setError(false)
@@ -44,7 +44,6 @@ function QuoteForm() {
     }
 
     submitQuote(quoteObject).then((res) => {
-      console.log(quoteObject)
       setShowSuccessMessage(true)
       setTimeout(() => {
         setShowSuccessMessage(false)
@@ -102,7 +101,7 @@ function QuoteForm() {
 
         <label htmlFor="people">Nº of travellers</label>
         <input
-          value={people}
+          value={parseInt(people)}
           onChange={(e) => setPeople(e.target.value)}
           type="number"
           min={1}
@@ -123,7 +122,7 @@ function QuoteForm() {
           />
         </div>
 
-        {/* contact information */}
+        {/* contact information  */}
         <label htmlFor="name">Name</label>
         <input
           value={name}
@@ -146,7 +145,7 @@ function QuoteForm() {
           required
         />
 
-        {error && <span> ‼ All fields are required. 🚫</span>}
+        {error && <span> All fields are required. 🚫</span>}
 
         <button type="button" onClick={handleQuoteSubmission}>
           Create Quote
