@@ -1,3 +1,4 @@
+import { response } from 'express'
 import { GraphQLClient, gql } from 'graphql-request'
 
 const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT
@@ -10,35 +11,46 @@ export default async function quotes(req, res) {
     }
   })
 
-  const query = gql`
-    mutation AddQuote(
+  const mutation = gql`
+    mutation CreateQuote(
       $from: String!,
       $departureDate: Date!,
       $destination: String!,
       $returnDate: Date!,
-      $people: Number!,
+      $people: Int!,
       $transport: Boolean!,
       $name: String!,
-      $email: String!,
-    ) {
-      addQuote(
+      $email: String!) {
+      createQuote(
         data: {
-          from: $from,
-          departureDate: $departureDate,
-          destination: $destination,
-          returnDate: $returnDate,
-          people: $people,
-          transport: $transport,
-          name: $name,
-          email: $email,
+          from: $from
+          departureDate: $departureDate
+          destination: $destination
+          returnDate: $returnDate
+          people: $people
+          transport: $transport
+          name: $name
+          email: $email
         }
-      )
+      ) {
+        id
+        from
+        departureDate
+        destination
+        returnDate
+        people
+        transport
+        name
+        email
+      }
     }
   `
 
   try {
-    const result = await graphQLClient.request(query, req.body)
-    return res.status(200).send(result)
+    console.log('entrou no result')
+    const result = await graphQLClient.request(mutation, req.body)
+    console.log(result)
+    return res.status(201).send(result)
   } catch (error) {
     console.log(error)
     console.log(req.body)
