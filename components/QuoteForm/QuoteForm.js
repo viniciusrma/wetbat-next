@@ -47,6 +47,14 @@ function QuoteForm() {
       setShowSuccessMessage(true)
       setTimeout(() => {
         setShowSuccessMessage(false)
+        setFrom('')
+        setDepartureDate('')
+        setDestination('')
+        setReturnDate('')
+        setPeople(1)
+        setTransport(false)
+        setName('')
+        setEmail('')
       }, 4000)
     })
   }
