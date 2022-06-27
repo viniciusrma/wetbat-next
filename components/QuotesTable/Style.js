@@ -31,4 +31,13 @@ export const QuotesTableWrapper = styled.table`
   tbody tr {
     border-bottom: 1px solid #dddddd;
   }
+
+  button {
+    font-size: 24px;
+    border: none;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
 `

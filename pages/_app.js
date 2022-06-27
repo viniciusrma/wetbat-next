@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="description" content="Wet bat app" />
       </Head>
       <Component {...pageProps} />
+      <div id="modal-root"/>
     </>
   )
 }

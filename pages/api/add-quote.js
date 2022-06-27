@@ -46,14 +46,10 @@ export default async function quotes(req, res) {
   `
 
   try {
-    console.log('entrou no result')
     const result = await graphQLClient.request(mutation, req.body)
-    console.log(result)
     return res.status(201).send(result)
   } catch (error) {
     console.log(error)
-    console.log(req.body)
-
     return res.status(500).send(error)
   }
 }
