@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 import { QuoteFormWrapper } from './Style'
 
 import { submitQuote } from '../../services'
