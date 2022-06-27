@@ -101,8 +101,8 @@ function QuoteForm() {
 
         <label htmlFor="people">Nº of travellers</label>
         <input
-          value={parseInt(people)}
-          onChange={(e) => setPeople(e.target.value)}
+          value={people}
+          onChange={(e) => setPeople(parseInt(e.target.value))}
           type="number"
           min={1}
           name="people"
