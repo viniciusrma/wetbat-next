@@ -79,19 +79,19 @@ $ git clone https://github.com/viniciusrma/wetbat-next
 ```sh
 
 $ yarn or yarn add
+then
 $ yarn dev - runs in dev mode
 
 ---
 
 $ yarn build
+then
 $ yarn start - runs 'production/builded' mode
 
 ```
+---
 
-2. Running the Application:
+<h4  align="center">
+Made with ❤ by <a  href="https://www.linkedin.com/in/viniciusrma/"  target="_blank">Vinícius Morais</a>
+</h4>
 
-The application runs in two parts:
-
-```sh
-
-$ npm install
