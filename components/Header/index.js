@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { HeaderWrapper } from './Style'
+import { HeaderWrapper } from './style'
 import Image from 'next/image'
 
 function Header() {

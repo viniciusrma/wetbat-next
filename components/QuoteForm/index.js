@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import { QuoteFormWrapper } from './Style'
-
+import { QuoteFormWrapper } from './style'
 import { submitQuote } from '../../services'
 
 function QuoteForm() {
@@ -63,6 +62,8 @@ function QuoteForm() {
     <QuoteFormWrapper>
       <h2>New Quote</h2>
       <form action="submit">
+
+
         <label htmlFor="from">Departure place</label>
         <input
           value={from}

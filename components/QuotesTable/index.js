@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { QuotesTableWrapper } from './Style'
-import Modal from '../Modal/Modal'
+import { QuotesTableWrapper } from './style'
+import Modal from '../Modal'
 
 export default function QuotesTable({ quotes }) {
   const [showModal, setShowModal] = useState(false)
