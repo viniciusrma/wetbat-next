@@ -20,12 +20,19 @@ function Airports() {
         options
       )
         .then((response) => response.json())
-        .then((response) => console.log(response.results))
+
+        // CODE THAT DOES NOT UPDATE THE STATE WITH THE RESULT VALUE
+
+        .then((response) => setValue(response.results))
+        //.then((response) => console.log(response))
+
         .catch((err) => console.error(err))
     }
 
     fetchData()
   }, [autocomplete])
+
+  console.log(value, 'im here')
 
   return (
     <div>
@@ -36,7 +43,11 @@ function Airports() {
         onChange={(e) => setAutocomplete(e.target.value)}
       />
 
-      {/* <div>{value}</div> */}
+      <div>
+        {value &&
+          value.length &&
+          value.map((item) => <div key={item.id}>{item.AirportName}</div>)}
+      </div>
     </div>
   )
 }
