@@ -3,6 +3,7 @@ import { HeaderWrapper } from './style'
 import Image from 'next/image'
 
 function Header() {
+
   return (
     <HeaderWrapper>
       <Image src="/logo.svg" alt="wetbat logo" width={300} height={120} />
