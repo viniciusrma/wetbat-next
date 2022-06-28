@@ -1,6 +1,6 @@
 # Wet Bat Next
 
-# API 🗜
+# 🗜 API 
 
 The API was developed using Graphcms (https://graphcms.com/), with the following Schema:
 
@@ -27,7 +27,7 @@ The quotes information are returned from the API using a Mutation called 'Create
 
 The video below shows how this actually works:
 
-# Search for Airports ✈
+# ✈ Search for Airports 
 
 ### STATUS 06/28 => Limit of 500 requests/day exceeded on 06/28. I put back the regular string input (the one that doesn't look up the API - it depends on user input). Will be available again on 29/06.
 
