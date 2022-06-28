@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from 'react'
-import { AirportWrapper } from './Style'
+import styles from '../../styles/Home.module.css'
 
 function Airports({ placeholder }) {
   const [value, setValue] = useState([])
@@ -22,10 +22,7 @@ function Airports({ placeholder }) {
       )
         .then((response) => response.json())
 
-        // CODE THAT DOES NOT UPDATE THE STATE WITH THE RESULT VALUE
-
         .then((response) => setValue(response.results))
-        //.then((response) => console.log(response))
 
         .catch((err) => console.error(err))
     }
@@ -33,10 +30,10 @@ function Airports({ placeholder }) {
     fetchData()
   }, [autocomplete])
 
-  console.log(value, 'im here')
+  console.log(value)
 
   return (
-    <AirportWrapper>
+    <div className={styles.airport}>
       <input
         placeholder={placeholder}
         className="flight-input"
@@ -51,7 +48,7 @@ function Airports({ placeholder }) {
             <option key={item.id}>{item.AirportName}</option>
           </select>
         ))}
-    </AirportWrapper>
+    </div>
   )
 }
 
