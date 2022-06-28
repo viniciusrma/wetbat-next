@@ -1,4 +1,4 @@
-# wetbat-next
+# Wet Bat Next
 
 # API 🗜
 
