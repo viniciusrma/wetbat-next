@@ -8,7 +8,7 @@ function Airports() {
   const options = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': '4e3affde55msh07ec9db864bf838p1cb663jsna923633e028a',
+      'X-RapidAPI-Key': '3d41bd8d55msh94c430571ef0a52p11a0f2jsn69277f9a7083',
       'X-RapidAPI-Host': 'world-airports-directory.p.rapidapi.com'
     }
   }
@@ -43,11 +43,13 @@ function Airports() {
         onChange={(e) => setAutocomplete(e.target.value)}
       />
 
-      <div>
+      <select>
         {value &&
           value.length &&
-          value.map((item) => <div key={item.id}>{item.AirportName}</div>)}
-      </div>
+          value.map((item) => (
+            <option key={item.id}>{item.AirportName}</option>
+          ))}
+      </select>
     </div>
   )
 }
