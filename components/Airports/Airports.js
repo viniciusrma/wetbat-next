@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from 'react'
-import { AirportWrapper } from './style'
+import { AirportWrapper } from './Style'
 
 function Airports({placeholder}) {
   const [value, setValue] = useState([])

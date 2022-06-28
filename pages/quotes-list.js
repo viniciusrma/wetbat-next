@@ -1,6 +1,6 @@
 import { getQuotes } from '../services'
-import Header from '../components/Header'
-import QuotesTable from '../components/QuotesTable'
+import Header from '../components/Header/Header'
+import QuotesTable from '../components/QuotesTable/QuotesTable'
 
 export default function QuotesList({ quotes }) {
   return (

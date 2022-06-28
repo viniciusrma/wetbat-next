@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { QuoteFormWrapper } from './style'
+import { QuoteFormWrapper } from './Style'
 import { submitQuote } from '../../services'
-import Airports from '../Airports'
+// import Airports from '../Airports/Airports'
 
 function QuoteForm() {
   const [error, setError] = useState(false)
@@ -64,8 +64,8 @@ function QuoteForm() {
       <h2>New Quote</h2>
       <form action="submit">
         <label htmlFor="from">Departure place</label>
-        <Airports value={from} onChange={(e) => setFrom(e.target.value)} placeholder="From"/>
-        {/* <input
+        {/* <Airports value={from} onChange={(e) => setFrom(e.target.value)} placeholder="From"/> */}
+        <input
           value={from}
           onChange={(e) => setFrom(e.target.value)}
           type="text"
@@ -73,7 +73,7 @@ function QuoteForm() {
           id="from"
           placeholder="From"
           required
-        /> */}
+        />
 
         <label htmlFor="departure-date">Departure date</label>
         <input
@@ -87,8 +87,8 @@ function QuoteForm() {
         />
 
         <label htmlFor="destination">Destination</label>
-        <Airports value={destination} onChange={(e) => setDestination(e.target.value)} placeholder="Destination"/>
-        {/* <input
+        {/* <Airports value={destination} onChange={(e) => setDestination(e.target.value)} placeholder="Destination"/> */}
+        <input
           value={destination}
           onChange={(e) => setDestination(e.target.value)}
           type="text"
@@ -96,7 +96,7 @@ function QuoteForm() {
           id="destination"
           placeholder="Destination"
           required
-        /> */}
+        />
 
         <label htmlFor="return-date">Return date</label>
         <input
