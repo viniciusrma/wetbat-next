@@ -19,7 +19,7 @@ The API was developed using Graphcms (https://graphcms.com/), with the following
 
 ```
 
-The only issue here is that Graphcms works with 'Content Stages', what means that when we push content from our UI, the data receives 'Content Stage: DRAFT', and we need to go inside the Graphcms dashboard and 'approve' the content, so then this content will receive the 'Content Stage: PUBLISHED', and we will be able to see the content on our UI Table; 
+The only issue here is that Graphcms works with 'Content Stages', what means that when we push content from our UI, the data receives 'Content Stage: DRAFT', and we need to go inside the Graphcms dashboard and 'approve' the content, so then this content will receive the 'Content Stage: PUBLISHED', and we will be able to see the content on our UI Table;
 
 This happens because i am using the free version, on the paid version it is possible to manage that and publish the content straight from our UI;
 
@@ -28,6 +28,8 @@ The quotes information are returned from the API using a Mutation called 'Create
 The video below shows how this actually works:
 
 # Search for Airports ✈
+
+### STATUS ON 06/28 => Limit of 500 requests/day exceeded on 06/28. I put back the regular string input (the one that doesn't look up the API - it depends on user input). Will be available again on 29/06.
 
 On the form, the fields 'from' and 'destination' are searchboxes that search inside 'world-airports-directory' api, available on the Rapid API (https://rapidapi.com/hub) website, and the selected value is passed as argument.
 
