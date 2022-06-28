@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { QuoteFormWrapper } from './style'
+import { QuoteFormWrapper } from './Style'
 import { submitQuote } from '../../services'
 // import Airports from '../Airports/Airports'
 
