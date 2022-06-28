@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const QuotesTableWrapper = styled.table`
+export const QuotesTableWrapper = styled.div`
   border-collapse: collapse;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   margin: 2rem auto;
@@ -39,5 +39,9 @@ export const QuotesTableWrapper = styled.table`
 
   button:hover {
     cursor: pointer;
+  }
+
+  @media (max-width: 414px) {
+    overflow-x: auto !important;
   }
 `

@@ -45,6 +45,7 @@ export default function QuotesTable({ quotes }) {
 
   return (
     <QuotesTableWrapper>
+      <table>
       <thead>
         <tr>
           <th>From</th>
@@ -58,6 +59,7 @@ export default function QuotesTable({ quotes }) {
       </thead>
 
       <tbody>{items}</tbody>
+      </table>
     </QuotesTableWrapper>
   )
 }
