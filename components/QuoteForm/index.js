@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { QuoteFormWrapper } from './style'
 import { submitQuote } from '../../services'
+import Airports from '../Airports'
 
 function QuoteForm() {
   const [error, setError] = useState(false)
@@ -62,9 +63,8 @@ function QuoteForm() {
     <QuoteFormWrapper>
       <h2>New Quote</h2>
       <form action="submit">
-
-
         <label htmlFor="from">Departure place</label>
+        <Airports value={from} onChange={(e) => setFrom(e.target.value)} placeholder="From"/>
         <input
           value={from}
           onChange={(e) => setFrom(e.target.value)}
@@ -87,6 +87,7 @@ function QuoteForm() {
         />
 
         <label htmlFor="destination">Destination</label>
+        <Airports value={destination} onChange={(e) => setDestination(e.target.value)} placeholder="Destination"/>
         <input
           value={destination}
           onChange={(e) => setDestination(e.target.value)}
