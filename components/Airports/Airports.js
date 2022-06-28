@@ -1,8 +1,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from 'react'
-import { AirportWrapper } from './Style'
+// import { AirportWrapper } from './Style'
 
-function Airports({placeholder}) {
+function Airports({ placeholder }) {
   const [value, setValue] = useState([])
   const [autocomplete, setAutocomplete] = useState('')
 
@@ -36,7 +36,7 @@ function Airports({placeholder}) {
   console.log(value, 'im here')
 
   return (
-    <AirportWrapper>
+    <div style={{ display: flex, flexDirection: column }}>
       <input
         placeholder={placeholder}
         className="flight-input"
@@ -51,7 +51,7 @@ function Airports({placeholder}) {
             <option key={item.id}>{item.AirportName}</option>
           </select>
         ))}
-    </AirportWrapper>
+    </div>
   )
 }
 
