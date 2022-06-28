@@ -9,7 +9,7 @@ function Airports({placeholder}) {
   const options = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': '3d41bd8d55msh94c430571ef0a52p11a0f2jsn69277f9a7083',
+      'X-RapidAPI-Key': process.env.NEXT_PUBLIC_RAPID_API_KEY,
       'X-RapidAPI-Host': 'world-airports-directory.p.rapidapi.com'
     }
   }

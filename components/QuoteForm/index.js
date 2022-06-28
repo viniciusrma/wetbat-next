@@ -65,7 +65,7 @@ function QuoteForm() {
       <form action="submit">
         <label htmlFor="from">Departure place</label>
         <Airports value={from} onChange={(e) => setFrom(e.target.value)} placeholder="From"/>
-        <input
+        {/* <input
           value={from}
           onChange={(e) => setFrom(e.target.value)}
           type="text"
@@ -73,7 +73,7 @@ function QuoteForm() {
           id="from"
           placeholder="From"
           required
-        />
+        /> */}
 
         <label htmlFor="departure-date">Departure date</label>
         <input
@@ -88,7 +88,7 @@ function QuoteForm() {
 
         <label htmlFor="destination">Destination</label>
         <Airports value={destination} onChange={(e) => setDestination(e.target.value)} placeholder="Destination"/>
-        <input
+        {/* <input
           value={destination}
           onChange={(e) => setDestination(e.target.value)}
           type="text"
@@ -96,7 +96,7 @@ function QuoteForm() {
           id="destination"
           placeholder="Destination"
           required
-        />
+        /> */}
 
         <label htmlFor="return-date">Return date</label>
         <input
