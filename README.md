@@ -29,7 +29,7 @@ The video below shows how this actually works:
 
 # Search for Airports ✈
 
-### STATUS ON 06/28 => Limit of 500 requests/day exceeded on 06/28. I put back the regular string input (the one that doesn't look up the API - it depends on user input). Will be available again on 29/06.
+### STATUS 06/28 => Limit of 500 requests/day exceeded on 06/28. I put back the regular string input (the one that doesn't look up the API - it depends on user input). Will be available again on 29/06.
 
 On the form, the fields 'from' and 'destination' are searchboxes that search inside 'world-airports-directory' api, available on the Rapid API (https://rapidapi.com/hub) website, and the selected value is passed as argument.
 
