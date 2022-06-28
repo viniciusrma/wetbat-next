@@ -4,6 +4,8 @@
 
 The API was developed using Graphcms (https://graphcms.com/), with the following Schema:
 
+```sh
+
 {
   from: String;
   departureDate: Date;
@@ -14,6 +16,10 @@ The API was developed using Graphcms (https://graphcms.com/), with the following
   name: String;
   email: String;
 }
+
+```
+
+
 
 
 The only issue here is that Graphcms works with 'Content Stages', what means that when we push content from our UI, we need to go inside the Graphcms dashboard and 'approve' the content, so then this content will receive the 'Content Stage: PUBLISHED', and we will be able to see the content on our UI Table; This happens because i am using the free version, on the paid version is possible to manage that and publish the content straight from our UI;
