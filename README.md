@@ -1,4 +1,6 @@
-# Wet Bat Next
+<h1  align="center">
+  <img src="https://i.ibb.co/94hySWz/wetbatlogo.png" alt="wetbatlogo" border="0">
+</h1>
 
 # 🗜 API 
 
