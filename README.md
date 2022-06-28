@@ -47,22 +47,6 @@ The project was developed using the following technologies:
 ### RapidAPI 🐙 (https://rapidapi.com/)
 
 # ⁉ How to use
-
----
-
-### **Steps**
-
-1. Cloning the application:
-
-```sh
-
-$ git clone ## ⁉ How to use
-
-### **Prerequisites**
-
-- It is necessary to have the **[Node.js](https://nodejs.org/en/)** installed
-- It is necessary to have a package manager installed, like **[NPM](https://www.npmjs.com/)** or **[Yarn](https://yarnpkg.com/)**
-
 ---
 
 ### **Steps**
@@ -87,7 +71,7 @@ $ yarn dev - runs in dev mode
 
 $ yarn build
 then
-$ yarn start - runs 'production/builded' mode
+$ yarn start - runs 'production/built' mode
 
 ```
 ---
