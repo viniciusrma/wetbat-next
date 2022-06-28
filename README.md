@@ -44,3 +44,54 @@ The project was developed using the following technologies:
 ### Graphcms 📡 (https://app.graphcms.com/)
 
 ### RapidAPI 🐙 (https://rapidapi.com/)
+
+# ⁉ How to use
+
+---
+
+### **Steps**
+
+1. Cloning the application:
+
+```sh
+
+$ git clone ## ⁉ How to use
+
+### **Prerequisites**
+
+- It is necessary to have the **[Node.js](https://nodejs.org/en/)** installed
+- It is necessary to have a package manager installed, like **[NPM](https://www.npmjs.com/)** or **[Yarn](https://yarnpkg.com/)**
+
+---
+
+### **Steps**
+
+1. Cloning the application:
+
+```sh
+
+$ git clone https://github.com/viniciusrma/wetbat-next
+
+```
+
+2. Running the Application:
+
+```sh
+
+$ yarn or yarn add
+$ yarn dev - runs in dev mode
+
+---
+
+$ yarn build
+$ yarn start - runs 'production/builded' mode
+
+```
+
+2. Running the Application:
+
+The application runs in two parts:
+
+```sh
+
+$ npm install
