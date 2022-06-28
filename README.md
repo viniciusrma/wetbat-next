@@ -34,7 +34,7 @@ On the form, the fields 'from' and 'destination' are searchboxes that search ins
 
 The project was developed using the following technologies:
 
- # NextJS 🔺 (https://nextjs.org/)
- # Styled-components 💅(https://styled-components.com/)
- # Graphcms 📡 (https://app.graphcms.com/)
- # RapidAPI 🐙 (https://rapidapi.com/)
+ ### NextJS 🔺 (https://nextjs.org/)
+ ### Styled-components 💅(https://styled-components.com/)
+ ### Graphcms 📡 (https://app.graphcms.com/)
+ ### RapidAPI 🐙 (https://rapidapi.com/)
