@@ -1,6 +1,6 @@
 # wetbat-next
 
-## API 🗜
+# API 🗜
 
 The API was developed using Graphcms (https://graphcms.com/), with the following Schema:
 
@@ -25,16 +25,18 @@ The quotes information are returned from the API using a Mutation called 'Create
 
 The video below shows how this actually works:
 
-## Search for Airports ✈
+# Search for Airports ✈
 
 On the form, the fields 'from' and 'destination' are searchboxes that search inside 'world-airports-directory' api, available on the Rapid API (https://rapidapi.com/hub) website, and the selected value is passed as argument.
- 
-  
- ## 💻 Applied technologies
+
+# 💻 Applied technologies
 
 The project was developed using the following technologies:
 
- ### NextJS 🔺 (https://nextjs.org/)
- ### Styled-components 💅(https://styled-components.com/)
- ### Graphcms 📡 (https://app.graphcms.com/)
- ### RapidAPI 🐙 (https://rapidapi.com/)
+### NextJS 🔺 (https://nextjs.org/)
+
+### Styled-components 💅(https://styled-components.com/)
+
+### Graphcms 📡 (https://app.graphcms.com/)
+
+### RapidAPI 🐙 (https://rapidapi.com/)
