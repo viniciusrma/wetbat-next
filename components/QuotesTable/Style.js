@@ -1,11 +1,14 @@
 import styled from 'styled-components'
 
 export const QuotesTableWrapper = styled.div`
-  border-collapse: collapse;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  margin: 2rem auto;
-  overflow-wrap: break-word;
-  font-size: 16px;
+
+  table {
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin: 2rem auto;
+    overflow-wrap: break-word;
+    font-size: 16px;
+  }
 
   thead tr {
     background-color: #237e7a;

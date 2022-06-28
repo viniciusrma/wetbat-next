@@ -46,19 +46,19 @@ export default function QuotesTable({ quotes }) {
   return (
     <QuotesTableWrapper>
       <table>
-      <thead>
-        <tr>
-          <th>From</th>
-          <th>Departure Date</th>
-          <th>Destination</th>
-          <th>Return Date</th>
-          <th>People</th>
-          <th>Transport</th>
-          <th>Actions</th>
-        </tr>
-      </thead>
+        <thead>
+          <tr>
+            <th>From</th>
+            <th>Departure Date</th>
+            <th>Destination</th>
+            <th>Return Date</th>
+            <th>People</th>
+            <th>Transport</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
 
-      <tbody>{items}</tbody>
+        <tbody>{items}</tbody>
       </table>
     </QuotesTableWrapper>
   )
