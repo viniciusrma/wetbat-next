@@ -1,5 +1,5 @@
-import Header from '../components/Header/Header'
-import Airports from '../components/Airports/Airports'
+import Header from '../components/Header'
+import Airports from '../components/Airports'
 
 function Test() {
   return (
