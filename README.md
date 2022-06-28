@@ -27,7 +27,6 @@ This happens because i am using the free version, on the paid version it is poss
 
 The quotes information are returned from the API using a Mutation called 'CreateQuote'
 
-The video below shows how this actually works:
 
 # ✈ Search for Airports 
 
